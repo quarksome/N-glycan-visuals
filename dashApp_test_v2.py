@@ -58,7 +58,8 @@ def natural_keys(text):
 
 cmpd_label_list.sort(key=natural_keys)
 
-with open('HS_allEIC.pickle', 'rb') as handle:
+pickleFile = 'HS_allEIC.pickle'
+with open(pickleFile, 'rb') as handle:
     allEICDict = pickle.load(handle)
 
 
